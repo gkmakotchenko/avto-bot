@@ -20,9 +20,9 @@ bot.command('startTracking',ctx => {
                 lastContent = currentContent;
                 // Отправка уведомления в Telegram
                 await ctx.reply('Содержимое таблицы изменилось!' + '\n' + URL);
-            } else [
+            } else {
                 console.log('Ничего не изменилось')
-            ]
+            }
         } catch (error) {
             console.error('Ошибка при получении данных:', error);
         }
